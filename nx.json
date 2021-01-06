@@ -22,5 +22,13 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "react-demo-app": {
+      "tags": []
+    },
+    "react-demo-app-e2e": {
+      "tags": [],
+      "implicitDependencies": ["react-demo-app"]
+    }
+  }
 }
