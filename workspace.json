@@ -110,6 +110,31 @@
           }
         }
       }
+    },
+    "react-header-lib": {
+      "root": "libs/react-header-lib",
+      "sourceRoot": "libs/react-header-lib/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": [
+              "libs/react-header-lib/**/*.{ts,tsx,js,jsx}"
+            ]
+          }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": [
+            "coverage/libs/react-header-lib"
+          ],
+          "options": {
+            "jestConfig": "libs/react-header-lib/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -29,6 +29,9 @@
     "react-demo-app-e2e": {
       "tags": [],
       "implicitDependencies": ["react-demo-app"]
+    },
+    "react-header-lib": {
+      "tags": []
     }
   }
 }
