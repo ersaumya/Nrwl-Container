@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavHeader} from '@saum-container/react-header-lib'
 import styles from './app.module.css';
 
 import { ReactComponent as Logo } from './logo.svg';
@@ -13,6 +13,7 @@ export function App() {
       <header className="flex">
         <Logo width="75" height="75" />
         <h1>Welcome to react-demo-app!</h1>
+        <NavHeader></NavHeader>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
