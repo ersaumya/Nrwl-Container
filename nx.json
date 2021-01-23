@@ -1,9 +1,14 @@
 {
   "npmScope": "saum-container",
-  "affected": { "defaultBase": "master" },
+  "affected": {
+    "defaultBase": "master"
+  },
   "implicitDependencies": {
     "workspace.json": "*",
-    "package.json": { "dependencies": "*", "devDependencies": "*" },
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
     "tsconfig.base.json": "*",
     "tslint.json": "*",
     ".eslintrc.json": "*",
@@ -12,16 +17,27 @@
   "tasksRunnerOptions": {
     "default": {
       "runner": "@nrwl/workspace/tasks-runners/default",
-      "options": { "cacheableOperations": ["build", "lint", "test", "e2e"] }
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
     }
   },
   "projects": {
-    "react-demo-app": { "tags": [] },
+    "react-demo-app": {
+      "tags": []
+    },
     "react-demo-app-e2e": {
       "tags": [],
       "implicitDependencies": ["react-demo-app"]
     },
-    "react-header-lib": { "tags": [] },
-    "api": { "tags": [] }
+    "react-header-lib": {
+      "tags": []
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interface": {
+      "tags": []
+    }
   }
 }

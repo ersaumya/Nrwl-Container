@@ -15,7 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@saum-container/react-header-lib": ["libs/react-header-lib/src/index.ts"]
+      "@saum-container/react-header-lib": [
+        "libs/react-header-lib/src/index.ts"
+      ],
+      "@saum-container/api-interface": ["libs/api-interface/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

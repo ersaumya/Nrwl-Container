@@ -1,17 +1,19 @@
-import React,{useState,useEffect} from 'react';
-import { NavHeader} from '@saum-container/react-header-lib'
+import React, { useState, useEffect } from 'react';
+import { NavHeader } from '@saum-container/react-header-lib';
+
 import styles from './app.module.css';
 
 import { ReactComponent as Logo } from './logo.svg';
 import star from './star.svg';
 
 import { Route, Link } from 'react-router-dom';
+import { ApiResponse, API_URL } from '@saum-container/api-interface';
 
 export function App() {
-  const [apiResponse,setApiResponse]=useState({message:'Loading......'})
-  useEffect(()=>{
-    fetch('/api').then(r=>r.json()).then(setApiResponse);
-  },[]);
+  const [apiResponse, setApiResponse] = useState<ApiResponse>({ message: 'Loading......' })
+  useEffect(() => {
+    fetch(API_URL).then(r => r.json()).then(setApiResponse);
+  }, []);
   return (
     <div className={styles.app}>
       <header className="flex">
